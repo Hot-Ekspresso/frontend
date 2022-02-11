@@ -1,6 +1,7 @@
 import { Box } from '@mui/system';
 import React from 'react';
 import * as colors from '@mui/material/colors';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 
 const LoginLanding: React.FC = ({children}) => {
   return (
@@ -13,14 +14,13 @@ const LoginLanding: React.FC = ({children}) => {
         rowGap: "100px",
       }}
     >
-      <Box
-        sx={{
-          width: "100%",
-          height: 70,
-          backgroundColor: colors.blue[700],
-        }}
-      >
-      </Box>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Hot Ekspresso Travel ✈️
+          </Typography>
+        </Toolbar>
+      </AppBar>
         {children}
     </Box>
   )
