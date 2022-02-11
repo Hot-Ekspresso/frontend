@@ -11,6 +11,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fontsource/roboto": "^4.5.3",
+    "@mui/lab": "^5.0.0-alpha.68",
     "@mui/material": "^5.4.0",
     "history": "^5.2.0",
     "mobx": "^6.3.13",
