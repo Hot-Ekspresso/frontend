@@ -3,9 +3,10 @@ import React from 'react';
 import loginStore from '../../store/login.store';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { observer } from 'mobx-react';
+import registerStore from '../../store/register.store';
 
-const Login: React.FC = observer(() => {
-  const store = loginStore;
+const Register: React.FC = observer(() => {
+  const store = registerStore;
   return (
     <Box
       sx={{
@@ -21,18 +22,24 @@ const Login: React.FC = observer(() => {
           alignItems: "center"
         }}
       >
-        <CardHeader title="Log In"/>
+        <CardHeader title="Sign Up"/>
         <CardContent
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            rowGap: "20px",
+            rowGap: "20px"
           }}
         >
-        <TextField 
+          <TextField 
             size="small"
             label="Username"
+            disabled={store.isFetching}
+          />
+          <TextField 
+            size="small"
+            label="Email"
+            type="email"
             disabled={store.isFetching}
           />
           <TextField 
@@ -41,15 +48,21 @@ const Login: React.FC = observer(() => {
             type="password"
             disabled={store.isFetching}
           />
-          <Link href="/register" variant="body2" underline="hover">
-            No account yet? Sign up here!
+          <TextField 
+            size="small"
+            label="Repeat password"
+            type="password"
+            disabled={store.isFetching}
+          />
+          <Link href="/login" variant="body2" underline="hover">
+            Already have an account? Log in here!
           </Link>
           <LoadingButton 
             loading={store.isFetching}
             variant="contained"
             onClick={store.submit}
           >
-            Log In
+            Sign Up
           </LoadingButton>
         </CardContent>
       </Card>
@@ -57,4 +70,4 @@ const Login: React.FC = observer(() => {
   )
 });
 
-export default Login;
+export default Register;
