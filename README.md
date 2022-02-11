@@ -1,0 +1,2 @@
+![CI/CD](https://github.com/Hot-Ekspresso/frontend/workflows/CI/CD/badge.svg)
+[![codecov](https://codecov.io/gh/Hot-Ekspresso/frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/Hot-Ekspresso/frontend)
