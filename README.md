@@ -1,2 +1,1 @@
-![CI/CD](https://github.com/Hot-Ekspresso/frontend/workflows/CI/CD/badge.svg)
-[![codecov](https://codecov.io/gh/Hot-Ekspresso/frontend/branch/main/graph/badge.svg?token=5TVQS5S2KR)](https://codecov.io/gh/Hot-Ekspresso/frontend)
+**THIS REPO HAS BEEN MIRATED TO https://github.com/GneyHabub/hot-ekspresso-frontend**
