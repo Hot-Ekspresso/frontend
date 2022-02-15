@@ -1,7 +1,7 @@
 import { Box } from '@mui/system';
 import React from 'react';
 import * as colors from '@mui/material/colors';
-import { AppBar, Toolbar, Typography } from '@mui/material';
+import { AppBar, Link, Toolbar, Typography } from '@mui/material';
 
 const Layout: React.FC = ({children}) => {
   return (
@@ -18,9 +18,19 @@ const Layout: React.FC = ({children}) => {
     >
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Link 
+            sx={{ 
+              flexGrow: 1,
+              cursor: "pointer"
+            }} 
+            href="/" 
+            variant="h6"
+            component="div"
+            underline="none"
+            color="white"
+          >
             Hot Ekspresso Travel ✈️
-          </Typography>
+          </Link>
         </Toolbar>
       </AppBar>
         {children}

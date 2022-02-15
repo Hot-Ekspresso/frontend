@@ -13,6 +13,7 @@ class AppStore {
   }
 
   setToken(token: string) {
+    sessionStorage.setItem('token', token);
     this.token = token;
   }
 }
