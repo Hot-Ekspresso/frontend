@@ -1,1 +1,1 @@
-**THIS REPO HAS BEEN MIRATED TO https://github.com/GneyHabub/hot-ekspresso-frontend**
+**THIS REPO HAS BEEN MIGRATED TO https://github.com/GneyHabub/hot-ekspresso-frontend**
